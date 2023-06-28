@@ -1,5 +1,12 @@
 class Booking < ApplicationRecord
     include PriceCalculator
+    validates :first_name, presence: true
+    validates :last_name, presence: true
+    validates :animal_name, presence: true
+    validates :animal_type, presence: true
+    validates :hours_requested, presence: true
+    validates :service_date, presence: true
+
     enum animal_type: { dog: 0, cat: 1 }
 
     def appointment_price
