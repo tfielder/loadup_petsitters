@@ -6,7 +6,7 @@ class Booking < ApplicationRecord
         calculate_appointment_price(self.animal_type.to_sym, self.hours_requested)
     end
 
-    def appointments_price_total
+    def self.appointments_price_total
         sum = 0
         Booking.all.each do |b|
             sum += b.appointment_price
