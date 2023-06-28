@@ -14,7 +14,7 @@
       <th><strong>Hours requested:</strong></th>
       <th><strong>Service date:</strong></th>
       <th><strong>Appt. price:</strong></th>
-      <th><strong>Link:</strong></th>
+      <th><strong>View:</strong></th>
     </tr>
     <% @bookings.each do |booking| %>
       <tr>
@@ -25,7 +25,7 @@
         <td><%= booking.hours_requested %></td>
         <td><%= booking.service_date %></td>
         <td><%= booking.appointment_price%></td>
-        <td><%= link_to "Show this booking", booking %></td>
+        <td><%= link_to "View", booking %></td>
       </tr>
     <% end %>
     <tr>
