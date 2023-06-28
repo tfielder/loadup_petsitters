@@ -28,12 +28,12 @@
 
   <div>
     <%= form.label :animal_type, style: "display: block" %>
-    <%= form.number_field :animal_type %>
+    <%= form.select :animal_type, Booking.animal_types.keys %>
   </div>
 
   <div>
     <%= form.label :hours_requested, style: "display: block" %>
-    <%= form.number_field :hours_requested %>
+    <%= form.number_field :hours_requested, :min => 2, :max => 8 %>
   </div>
 
   <div>

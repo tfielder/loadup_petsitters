@@ -2,13 +2,29 @@
 
 <h1>Bookings</h1>
 
-<div id="bookings">
-  <% @bookings.each do |booking| %>
-    <%= render booking %>
-    <p>
-      <%= link_to "Show this booking", booking %>
-    </p>
-  <% end %>
-</div>
-
 <%= link_to "New booking", new_booking_path %>
+
+<div id="bookings">
+  <table>
+    <tr>
+      <th><strong>First name:</strong></th>
+      <th><strong>Last name:</strong></th>
+      <th><strong>Animal name:</strong></th>
+      <th><strong>Animal type:</strong></th>
+      <th><strong>Hours requested:</strong></th>
+      <th><strong>Service date:</strong></th>
+      <th><strong>Link:</strong></th>
+    </tr>
+    <% @bookings.each do |booking| %>
+      <tr>
+        <td><%= booking.first_name %></td>
+        <td><%= booking.last_name %></td>
+        <td><%= booking.animal_name %></td>
+        <td><%= booking.animal_type %></td>
+        <td><%= booking.hours_requested %></td>
+        <td><%= booking.service_date %></td>
+        <td><%= link_to "Show this booking", booking %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
