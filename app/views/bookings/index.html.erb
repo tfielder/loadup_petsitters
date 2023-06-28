@@ -13,6 +13,7 @@
       <th><strong>Animal type:</strong></th>
       <th><strong>Hours requested:</strong></th>
       <th><strong>Service date:</strong></th>
+      <th><strong>Appt. price:</strong></th>
       <th><strong>Link:</strong></th>
     </tr>
     <% @bookings.each do |booking| %>
@@ -23,9 +24,19 @@
         <td><%= booking.animal_type %></td>
         <td><%= booking.hours_requested %></td>
         <td><%= booking.service_date %></td>
-        # <td><%= booking.appointment_price%></td>
+        <td><%= booking.appointment_price%></td>
         <td><%= link_to "Show this booking", booking %></td>
       </tr>
     <% end %>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><%= @bookings.last.appointments_price_total %></td>
+      <td></td>
+    </tr>
   </table>
 </div>
