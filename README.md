@@ -13,7 +13,7 @@ Tim Fielder
 06/28/2023
 
 * Ruby version:
-3.0.0
+3.1.0
 
 * System dependencies
 Rails 7+
