@@ -11,7 +11,9 @@
   </head>
 
   <body>
-    <%= link_to "Admin", admin_bookings_url %>
-    <%= yield %>
+    <div class="main_margin">
+      <div id="main-header_text"><%= link_to "Admin", admin_bookings_url %></div>
+      <%= yield %>
+    </div>
   </body>
 </html>

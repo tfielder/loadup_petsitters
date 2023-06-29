@@ -38,6 +38,6 @@ class BookingsControllerTest < ActionDispatch::IntegrationTest
       delete booking_url(@booking)
     end
 
-    assert_redirected_to bookings_url
+    assert_redirected_to admin_bookings_url
   end
 end

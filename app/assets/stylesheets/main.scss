@@ -1,0 +1,165 @@
+// Color
+$light-blue: rgb(92, 142, 241);
+$dark-blue: rgb(58, 93, 161);
+$background-black: rgb(32, 33, 36);
+$white: rgb(232, 234, 237);
+
+
+// Main styles
+body {
+    background-color: $background-black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: $light-blue;
+    }
+
+    &:visited {
+        color: $white;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+}
+
+p {
+    color: $white;
+}
+
+h1, h2, h3, h4 {
+    color: $white;
+}
+
+button, .button {
+    background-color: $light-blue;
+    border: none;
+    border-radius: 1.875rem;
+    color: $white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: .5rem;
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+}
+
+label {
+    color: $white;
+}
+
+ul {
+    color: $white;
+}
+
+th {
+    color: $light-blue;
+}
+
+td {
+    color: $white;
+}
+
+th, td {
+    padding: 4px 8px;
+    text-align: center;
+}
+
+#main-header {
+    background-color: black;
+    color: $white;
+    display: flex;
+    padding: .5rem;
+
+    a {
+        margin: 0 .5rem;
+    }
+}
+
+#main-content {
+    padding: 0 .5rem;
+}
+
+#main-footer {
+    background-color: black;
+    bottom: 0;
+    color: $white;
+
+    position: absolute;
+    
+    width: 100%;
+}
+
+#main-footer_text {
+    margin-right: 1rem;
+    justify-content: right;
+}
+
+#main-header_text {
+    display: flex;
+    margin-right: 1rem;
+    justify-content: right;
+}
+
+#main-title {
+    color: $light-blue;
+}
+
+#hero-image {
+    height: 20rem;
+    width: auto;
+}
+
+.flexit-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexit {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexit-center {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    margin: 0 .5rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.blue {
+    color: $light-blue;
+}
+
+.button-to-text {
+    background-color: $background-black;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        background-color: $background-black;
+    }
+}
+
+.main_margin {
+    margin: 1rem;
+}
