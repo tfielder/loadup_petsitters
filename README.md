@@ -19,11 +19,11 @@ Tim Fielder
 Rails 7+
 
 * Getting Started
-1 - Clone the repo down locally.
-2 - Run bundle install
-3 - Run rails db:create
-4 - Run rails db:migrate
-5 - Test out your version is working locally by running rails s and navigating to localhost:3000
+1. Clone the repo down locally.
+2. Run bundle install
+3. Run rails db:create
+4. Run rails db:migrate
+5. Test out your version is working locally by running rails s and navigating to localhost:3000
 
 * How to run the test suite
 For Rspec tests run rspec -fd (for an explicit list) or just rspec.
