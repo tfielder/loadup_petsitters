@@ -23,8 +23,8 @@
         <td><%= booking.animal_name %></td>
         <td><%= booking.animal_type %></td>
         <td><%= booking.hours_requested %></td>
-        <td><%= booking.service_date %></td>
-        <td><%= booking.appointment_price%></td>
+        <td><%= booking.service_date.strftime('%FT%T') %></td>
+        <td><%= number_to_currency(booking.appointment_price, :unit => "$")%></td>
         <td><%= link_to "View", booking %></td>
       </tr>
     <% end %>
@@ -35,7 +35,7 @@
       <td></td>
       <td></td>
       <td></td>
-      <td><%= @price_total %></td>
+      <td><%= number_to_currency(@price_total, :unit => "$") %></td>
       <td></td>
     </tr>
   </table>
