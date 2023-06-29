@@ -1,0 +1,47 @@
+<%= form_with(model: booking) do |form| %>
+  <% if booking.errors.any? %>
+    <div style="color: red;">
+      <h2><%= pluralize(booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+        <% booking.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+  <br />
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+  <br />
+  <div>
+    <%= form.label :animal_name, style: "display: block" %>
+    <%= form.text_field :animal_name %>
+  </div>
+  <br />
+  <div>
+    <%= form.label :animal_type, style: "display: block" %>
+    <%= form.select :animal_type, Booking.animal_types.keys %>
+  </div>
+  <br />
+  <div>
+    <%= form.label :hours_requested, style: "display: block" %>
+    <%= form.number_field :hours_requested, :min => 2, :max => 8 %>
+  </div>
+  <br />
+  <div>
+    <%= form.label :service_date, style: "display: block" %>
+    <%= form.datetime_field :service_date %>
+  </div>
+  <br />
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="main_padded">
+  <h1>Booking <%= @booking.id %></h1>
+
+  <%= render @booking %>
+    <br />
+    <%= link_to "Home", root_path, class: "button" %> |
+    <%= link_to "Edit this booking", edit_booking_path(@booking), class: "button" %> |
+  </div>
+  <br />
+  <%= button_to "Delete", @booking, method: :delete %>
+</div>

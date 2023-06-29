@@ -1,0 +1,32 @@
+<div id="<%= dom_id booking %>">
+  <p>
+    <strong>First name:</strong>
+    <%= booking.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= booking.last_name %>
+  </p>
+
+  <p>
+    <strong>Animal name:</strong>
+    <%= booking.animal_name %>
+  </p>
+
+  <p>
+    <strong>Animal type:</strong>
+    <%= booking.animal_type %>
+  </p>
+
+  <p>
+    <strong>Hours requested:</strong>
+    <%= booking.hours_requested %>
+  </p>
+
+  <p>
+    <strong>Service date:</strong>
+    <%= booking.service_date.strftime("%m-%d-%Y %H:%M") %>
+  </p>
+
+</div>

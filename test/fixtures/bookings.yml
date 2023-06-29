@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  animal_name: MyString
+  animal_type: 'dog'
+  hours_requested: 3
+  service_date: 2023-06-27 20:44:46
+
+two:
+  first_name: MyString
+  last_name: MyString
+  animal_name: MyString
+  animal_type: 'cat'
+  hours_requested: 4
+  service_date: 2023-06-27 20:44:46

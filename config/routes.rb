@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root to: 'welcome#home'
+  get 'admin/bookings', to: 'admin#index'
+  
+  resources :bookings, except: [:index]
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 end
